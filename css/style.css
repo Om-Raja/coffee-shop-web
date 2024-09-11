@@ -1,0 +1,123 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+    outline: none;
+    border:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    transition: 0.2s linear; 
+
+}
+:root{
+        --main-color: #ECB176;
+        --color2:#A67B5B;
+        --color3:#FED8B1;
+        --bg:#6F4E37;
+        --border:0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+html{
+    font-size: 70%;
+    overflow-x:hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius:5rem;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+#header{
+    background-color: var(--bg);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.4rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 10;
+}
+#logo img{
+    height: 5rem;
+}
+
+#header #navbar a{
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+#header #navbar a:hover{
+    color:var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.2rem;
+}
+
+#header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.850rem;
+    padding: 1rem;
+}
+#header .icons div:hover{
+    color:var(--main-color);
+}
+
+.icons{
+    display:flex;
+    justify-content: space-between;
+}
+
+#menu{
+    display: none;
+}
+
+#search-bar{
+    position: absolute;
+    top:115%;
+    right: 7%;
+    background-color: var(--color3);
+    width: 50rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+#search-bar #search-box{
+    background-color: var(--color3);
+    font-size:1.5rem;
+    width: 85%;
+    height: 80%;
+    text-transform: none;
+    margin-right:1rem;
+    color:var(--bg);
+    font-weight: 400;
+}
+#search-bar #search-box+label{
+    font-size: 1.7rem;
+    color: var(--color2);
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+#search-bar #search-box+label:hover{
+    color:var(--main-color);
+}
